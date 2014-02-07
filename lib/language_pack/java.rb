@@ -53,7 +53,6 @@ module LanguagePack
 
     def java_version
       @java_version ||= system_properties["java.runtime.version"] || DEFAULT_JDK_VERSION
-      puts "Java version=#{@java_version}"
     end
 
     def system_properties
@@ -64,7 +63,6 @@ module LanguagePack
     def download_jdk(jdk_tarball)
       puts "Downloading JDK..."
       fetched_package = fetch_jdk_package(java_version)
-      puts "FEtched pack=#{fetched_package}"
       FileUtils.mv fetched_package, jdk_tarball
     end
 
