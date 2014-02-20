@@ -19,8 +19,8 @@ module LanguagePack
     def initialize(build_path, cache_path=nil)
       @build_path = build_path
       @cache_path = cache_path
-      puts "build path=#{@build_path}"
-      puts "cache path=#{@cache_path}"
+      #puts "build path=#{@build_path}"
+      #puts "cache path=#{@cache_path}"
     end
 
     def name
